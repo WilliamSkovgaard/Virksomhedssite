@@ -1,0 +1,92 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff7e6;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.search-bar input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #f0c864;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+}
+.search-bar input::placeholder {
+  color: #b3b3b3;
+}
+.calendar-button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  border: 1px solid #f0c864;
+  background-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.calendar-button:hover {
+  background-color: #f0c864;
+  color: white;
+}
+.tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.tag {
+  padding: 5px 15px;
+  background-color: #ffc8d6;
+  border: 1px solid black;
+  border-radius: 3px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+}
+.tag:hover {
+  background-color: #ffb1c3;
+}
+/* FOOTER */
+footer {
+  background-color: #fff1d6;
+  border: 1px solid black;
+  font-size: 0.8em;
+}
+
+.grid-1-1-1_2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav ul {
+  list-style-type: none;
+  text-decoration: none;
+}
+.medier {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+}
