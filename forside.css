@@ -7,9 +7,6 @@
   list-style: none;
 }
 body {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  min-height: 100vh;
   background-color: rgb(49, 49, 49);
 }
 nav {
@@ -154,11 +151,13 @@ ul.header_nav li a {
   width: 1.9vw;
 }
 .knap_booking a {
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 .section_2 {
   background-color: #fff1d6;
   height: 13%;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 .section_2 .grid_1-1-1 div {
   display: flex;
@@ -171,6 +170,9 @@ ul.header_nav li a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.faste_shows {
+  grid-row: 2/3;
 }
 .section_2 h1 {
   color: black;
@@ -179,12 +181,63 @@ ul.header_nav li a {
   color: black;
   font-variation-settings: "wght" 200;
 }
+.section_3 {
+  background-color: #fef8ed;
+  padding: 8%;
+}
+
+.section_3 img {
+  max-width: 100%;
+  grid-column: 2/4;
+}
+.section_3 p {
+  color: black;
+  font-variation-settings: "wght" 200;
+}
+.section_3 > div > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.knap_laes_mere {
+  border-color: #ffda20;
+  border-width: 1px;
+  border-style: solid;
+  text-align: center;
+  width: 210px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: black;
+  justify-self: baseline;
+  font-size: 1.2em;
+}
+
+footer {
+  background-color: #1f1f1f;
+  font-size: 0.8em;
+  padding: 8%;
+}
+
+.footer_div {
+  display: flex;
+  justify-content: space-between;
+}
+.medier {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+}
 h1 {
   font-family: "cofo-gothic-variable", sans-serif;
   font-variation-settings: "wght" 400;
   font-size: 1.3em;
   text-align: center;
-  margin: 2em;
+  margin: 1em 0 2em 0;
 }
 h2 {
   font-variation-settings: "wght" 900;
@@ -192,8 +245,9 @@ h2 {
   color: black;
 }
 h3 {
-  font-variation-settings: "wght" 600;
-  font-size: 2.5em;
+  font-variation-settings: "wght" 500;
+  font-size: 2.2em;
+  color: black;
 }
 h4 {
   font-variation-settings: "wght" 500;
@@ -203,4 +257,7 @@ h4 {
 .underoverskrift {
   font-size: 1.3vw;
   font-variation-settings: "wght" 300;
+}
+p {
+  line-height: 1.5;
 }
