@@ -7,15 +7,29 @@
   list-style: none;
 }
 body {
-  background: url(img/comedyposter1.webp);
+  background: brown;
+}
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+header.scrolled {
+  background-color: black;
+}
+section {
+  margin: auto;
+  padding: 0 50px;
 }
 nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding: 15px;
 }
 ul.header_nav {
   display: flex;
   justify-content: space-between;
+  margin: 8px 0 0 0;
 }
 ul.header_nav li a {
   font-family: "cofo-gothic-variable", sans-serif;

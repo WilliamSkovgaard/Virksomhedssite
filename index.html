@@ -8,17 +8,16 @@
     <link rel="stylesheet" href="forside.css" />
   </head>
   <body>
-    <header>
+    <header id="header">
       <nav>
-        <div>
+        <a href="index.html">
           <img src="img/logo.svg" alt="logo" />
-        </div>
+        </a>
         <ul class="header_nav">
-          <li><a href="">ARRANGEMENTER</a></li>
+          <li><a href="booking.html">ARRANGEMENTER</a></li>
           <li><a href="">GAVEKORT</a></li>
           <li><a href="">UDLEJNING</a></li>
-          <li><a href="">INFO</a></li>
-          <li><a href="">UNDERVISNING</a></li>
+          <li><a href="info.html">INFO</a></li>
         </ul>
       </nav>
     </header>
@@ -164,5 +163,18 @@
         </div>
       </div>
     </footer>
+    <script>
+      // Add an event listener to detect scroll
+      window.addEventListener("scroll", function () {
+        const header = document.getElementById("header");
+
+        // Add or remove class based on scroll position
+        if (window.scrollY > 687) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+    </script>
   </body>
 </html>
