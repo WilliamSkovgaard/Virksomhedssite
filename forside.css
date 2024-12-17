@@ -7,7 +7,7 @@
   list-style: none;
 }
 body {
-  background-color: rgb(49, 49, 49);
+  background: url(img/comedyposter1.webp);
 }
 nav {
   display: grid;
@@ -32,7 +32,8 @@ ul.header_nav li a {
   gap: 30px;
 }
 .section_1 {
-  background-color: #042d17;
+  background-color: #042d17c0;
+  backdrop-filter: blur (10px);
 }
 .section_1 > div > div {
   border-radius: 7% / 4.5%;
@@ -225,16 +226,9 @@ footer {
   display: flex;
   justify-content: space-between;
 }
-.medier {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  display: flex;
-  gap: 10px;
-}
 h1 {
   font-family: "cofo-gothic-variable", sans-serif;
-  font-variation-settings: "wght" 400;
+  font-variation-settings: "wght" 200;
   font-size: 1.3em;
   text-align: center;
   margin: 1em 0 2em 0;
