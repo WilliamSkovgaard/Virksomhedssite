@@ -4,22 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Arrangementer</title>
+    <link rel="stylesheet" href="https://use.typekit.net/lvo5gaz.css" />
+    <link rel="stylesheet" href="forside.css" />
     <link rel="stylesheet" href="booking.css" />
   </head>
   <body>
-    <header>
+    <header id="header">
       <nav>
-        <div>
+        <a href="index.html">
           <img src="img/logo.svg" alt="logo" />
-        </div>
+        </a>
         <ul class="header_nav">
-          <li><a href="">ARRANGEMENTER</a></li>
+          <li><a href="booking.html">ARRANGEMENTER</a></li>
           <li><a href="">GAVEKORT</a></li>
-          <li><a href="">INFO</a></li>
+          <li><a href="">UDLEJNING</a></li>
+          <li><a href="info.html">INFO</a></li>
         </ul>
       </nav>
     </header>
     <main>
+      <section>
+        <div class="video"></div>
+      </section>
       <div class="search-container">
         <h1>Arrangementer</h1>
         <div class="search-bar">
@@ -116,33 +122,43 @@
           <img src="img/Arrow_3.svg" alt="pil" />
         </div> -->
       </section>
+      <script>
+        // Add an event listener to detect scroll
+        window.addEventListener("scroll", function () {
+          const header = document.getElementById("header");
+
+          // Add or remove class based on scroll position
+          if (window.scrollY > 500) {
+            header.classList.add("scrolled");
+          } else {
+            header.classList.remove("scrolled");
+          }
+        });
+      </script>
     </main>
 
-    <footer class="footer">
-      <div class="footer-container">
-        <div class="footer-venstre">
+    <footer>
+      <div class="footer_div">
+        <div>
           <img src="img/logo.svg" alt="logo" />
-          <p>
-            Kompagnistræde 19<br />
-            1208 København H<br />
-            <a href="mailto:info@comedyzoo.dk">info@comedyzoo.dk</a>
-          </p>
-          <p>© Copyright | <a href="#">Cookies policy</a></p>
+          <p>Kompagnistræde 19</p>
+          <p>1208 København H</p>
+          <p>info@comedyzoo.dk</p>
+          <p>Copyright Cookies policy</p>
         </div>
-
-        <div class="footer-midten">
-          <ul>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">UDLEJNING</a></li>
-            <li><a href="#">KARRIERER</a></li>
-            <li><a href="#">KONTAKT OS</a></li>
+        <div>
+          <ul class="menu">
+            <li><a href="">FAQ</a></li>
+            <li><a href="">UDLEJNING</a></li>
+            <li><a href="">KARRIERE</a></li>
+            <li><a href="">KONTAKT OS</a></li>
           </ul>
         </div>
-      </div>
-      <!-- test -->
-      <div class="medier">
-        <a href="#"><img src="img/insta.png" alt="instagram" /></a>
-        <a href="#"><img src="img/facebook.png" alt="Facebook" /></a>
+        <ul class="medier">
+          <li><img src="Socials/instagram.svg" alt="instagram" /></li>
+          <li><img src="Socials/facebook.svg" alt="facebook" /></li>
+          <li><img src="Socials/youtube.svg" alt="youtube" /></li>
+        </ul>
       </div>
     </footer>
   </body>
