@@ -3,16 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Booking</title>
+    <title>Arrangementer</title>
     <link rel="stylesheet" href="booking.css"
   </head>
   <body>
     <header>
       <nav>
         <div>
-          <img src="" alt="" />
+          <img src="img/logo.svg" alt="logo" />
         </div>
-        <ul>
+        <ul class="header_nav">
           <li><a href="">ARRANGEMENTER</a></li>
           <li><a href="">GAVEKORT</a></li>
           <li><a href="">UDLEJNING</a></li>
@@ -25,7 +25,9 @@
         <h1>KOMMENDE SHOWS</h1>
         <div class="search-bar">
           <input type="text" placeholder="SØG efter komiker ..." />
-          <button class="calendar-button">KALENDER</button>
+          <div class="calendar-button">
+            <input type="date" id="booking-date" />
+          </div>
         </div>
         <div class="tags">
           <div class="tag">Open Mic</div>
@@ -36,32 +38,113 @@
           <div class="tag">Live podcast</div>
         </div>
       </div>
-      <div class="grid-1-1-1"></div>
-      <section></section>
+
+      <section class="section_1">
+        <h1>Arrangementer</h1>
+        <div class="grid_1-1-1">
+          <div class="grid_poster">
+            <img src="img/Comedyposter1.webp" alt="" />
+            <div><p class="tags2">Lørdag</p></div>
+            <div><p class="tags2">14.12.24</p></div>
+            <div><p class="tags2">Testshow</p></div>
+            <div>
+              <h4>Funny Man</h4>
+              <p class="underoverskrift">Thom Yorke</p>
+            </div>
+            <div><a class="koeb_billet" href="">KØB BILLET</a></div>
+          </div>
+          <div class="grid_poster">
+            <img src="img/comedyposter2.webp" alt="" />
+            <div><p class="tags2">Lørdag</p></div>
+            <div><p class="tags2">14.12.24</p></div>
+            <div><p class="tags2">Testshow</p></div>
+            <div>
+              <h4>This is My Life</h4>
+              <p class="underoverskrift">Alfred Sevelin</p>
+            </div>
+            <div><a href="">KØB BILLET</a></div>
+          </div>
+          <div class="grid_poster">
+            <img src="img/comedyposter3.webp" alt="" />
+            <div><p class="tags2">Lørdag</p></div>
+            <div><p class="tags2">14.12.24</p></div>
+            <div><p class="tags2">Testshow</p></div>
+            <div>
+              <h4>The Funny Ones</h4>
+              <p class="underoverskrift">Opvarming: Linda P</p>
+            </div>
+
+            <div><a href="">KØB BILLET</a></div>
+          </div>
+          <div class="grid_poster">
+            <img src="img/comedyposter4.webp" alt="" />
+            <div><p class="tags2">Lørdag</p></div>
+            <div><p class="tags2">14.12.24</p></div>
+            <div><p class="tags2">Testshow</p></div>
+            <div>
+              <h4>Tre Bros på Tur</h4>
+              <p class="underoverskrift">Talent: Malthe Smalbro</p>
+            </div>
+
+            <div><a href="">KØB BILLET</a></div>
+          </div>
+          <div class="grid_poster">
+            <img src="img/comedyposter5.webp" alt="" />
+            <div><p class="tags2">Lørdag</p></div>
+            <div><p class="tags2">14.12.24</p></div>
+            <div><p class="tags2">Testshow</p></div>
+            <div>
+              <h4>OMG</h4>
+              <p class="underoverskrift">Daniel Rosenkrans</p>
+            </div>
+
+            <div><a href="">KØB BILLET</a></div>
+          </div>
+          <div class="grid_poster">
+            <img src="img/comedyposter6.webp" alt="" />
+            <div><p class="tags2">Lørdag</p></div>
+            <div><p class="tags2">14.12.24</p></div>
+            <div><p class="tags2">Testshow</p></div>
+            <div>
+              <h4>"Så sagde hun..."</h4>
+              <p class="underoverskrift">Sylvester Bronsey</p>
+            </div>
+
+            <div><a href="">KØB BILLET</a></div>
+          </div>
+        </div>
+        <!-- <div class="knap_booking">
+          <a href="">SE PROGRAM </a>
+          <img src="img/Arrow_3.svg" alt="pil" />
+        </div> -->
+      </section>
     </main>
 
-    <footer>
-      <div class="grid-1-1-1_2">
-        <div>
-          <img src="logo.svg" alt="logo" />
-          <p>KOMPAGNISTRÆDE 19, 1208 KØBENHAVN H</p>
-          <p>INFO@COMEDYZOO.DK</p>
-          <p>Copyright Cookies policy</p>
-        </div>
-        <div>
-          <ul class="menu">
-            <li><a href="">FAQ</a></li>
-            <li><a href="">UDLEJNING</a></li>
-            <li><a href="">KARRIERE</a></li>
-            <li><a href="">KONTAKT OS</a></li>
-          </ul>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-venstre">
+          <img src="img/logo.svg" alt="logo" />
+          <p>
+            Kompagnistræde 19<br />
+            1208 København H<br />
+            <a href="mailto:info@comedyzoo.dk">info@comedyzoo.dk</a>
+          </p>
+          <p>© Copyright | <a href="#">Cookies policy</a></p>
         </div>
 
-        <div class="medier">
-          <img src="insta.svg" alt="instagram" />
-          <img src="tiktok.svg" alt="tiktok" />
-          <img src="facebook.svg" alt="facebook" />
+        <div class="footer-midten">
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">UDLEJNING</a></li>
+            <li><a href="#">KARRIERER</a></li>
+            <li><a href="#">KONTAKT OS</a></li>
+          </ul>
         </div>
+      </div>
+      <!-- test -->
+      <div class="medier">
+        <a href="#"><img src="img/insta.png" alt="instagram" /></a>
+        <a href="#"><img src="img/facebook.png" alt="Facebook" /></a>
       </div>
     </footer>
   </body>
