@@ -1,8 +1,9 @@
 /* BOOKINGSIDE */
+
 .search-bar {
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   margin: 10px;
   margin-top: 50px;
 }
@@ -13,6 +14,7 @@
   outline: none;
   font-size: 15px;
   background-color: #fdf4e0;
+  height: 30px;
 }
 .search-bar input::placeholder {
   color: #b3b3b3;
@@ -33,14 +35,113 @@
 }
 .tag {
   padding: 5px 15px;
-  background-color: rgba(255, 122, 220, 0.34);
+  /* background-color: rgba(255, 122, 220, 0.34); */
+  background-color: #ffc20f;
+  margin-top: 30px;
+  margin-bottom: 20px;
 
-  font-size: 14px;
+  font-size: 18px;
+
   text-align: center;
+  justify-content: center;
   cursor: pointer;
+  width: 100px;
+  height: 25px;
+  color: black;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.testshow {
+  background-color: #8666f0;
+  padding: 5px 15px;
+  /* background-color: rgba(255, 122, 220, 0.34); */
+  margin-top: 30px;
+  margin-bottom: 20px;
+
+  font-size: 18px;
+
+  text-align: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 100px;
+  height: 25px;
+  color: black;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.klubaften {
+  background-color: #f06686;
+  padding: 5px 15px;
+  /* background-color: rgba(255, 122, 220, 0.34); */
+  margin-top: 30px;
+  margin-bottom: 20px;
+
+  font-size: 18px;
+
+  text-align: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 100px;
+  height: 25px;
+  color: black;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.improsaften {
+  background-color: #66c8f0;
+  padding: 5px 15px;
+  /* background-color: rgba(255, 122, 220, 0.34); */
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  text-align: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 100px;
+  height: 25px;
+  color: black;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.livepodcast {
+  background-color: #2ec044;
+  padding: 5px 15px;
+  /* background-color: rgba(255, 122, 220, 0.34); */
+  margin-top: 30px;
+  margin-bottom: 20px;
+
+  font-size: 18px;
+
+  text-align: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 100px;
+  height: 25px;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .tag:hover {
-  background-color: #fdf4e0;
+  background-color: #efe7c9;
 }
 .tags2 {
   font-size: 0.5em;
