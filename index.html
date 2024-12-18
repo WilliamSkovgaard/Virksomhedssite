@@ -22,10 +22,17 @@
       </nav>
     </header>
     <main>
-      <section>
-        <div class="video"></div>
-      </section>
-      <section class="section_1">
+      <div>
+        <div id="video">
+          <video autoplay muted loop class="comedyzoo-video">
+            <source
+              src="http://benminja.dk/T05_passion/site-virk/test/video/comedyzoo-klip4.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+      </div>
+      <section class="section_1" id="main-content">
         <h1>Arrangementer</h1>
         <div class="grid_1-1-1">
           <div class="grid_poster">
@@ -104,8 +111,24 @@
           <img src="img/Arrow_3.svg" alt="pil" />
         </div>
       </section>
-      <section class="section_2">
-        <h1>Faste Shows</h1>
+      <section class="section_2" id="main-content">
+        <script
+          src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+          type="module"
+        ></script>
+        <dotlottie-player
+          src="https://lottie.host/4a0565de-6750-4707-9edb-5cadfa09c88a/0eZ34XpcPl.lottie"
+          background="transparent"
+          speed="1"
+          style="
+            width: 90px;
+            height: 90px;
+            align-self: center;
+            justify-self: center;
+          "
+          loop
+          autoplay
+        ></dotlottie-player>
         <div class="grid_1-1-1 faste_shows">
           <div>
             <h2>Open Mic</h2>
@@ -124,7 +147,7 @@
           </div>
         </div>
       </section>
-      <section class="section_3">
+      <section class="section_3" id="main-content">
         <div class="grid_1-1-1">
           <div>
             <div>
@@ -139,7 +162,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer id="main-content">
       <div class="footer_div">
         <div>
           <img src="img/logo.svg" alt="logo" />
@@ -176,5 +199,6 @@
         }
       });
     </script>
+    <script src="comedy-test.js"></script>
   </body>
 </html>

@@ -42,7 +42,6 @@ ul.header_nav li a {
 .gallery-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: 200px;
   gap: 10px;
   padding: 10px;
   max-width: 100%;
@@ -100,7 +99,6 @@ nav ul {
 @media (min-width: 768px) {
   .gallery-container {
     grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 250px;
   }
 
   .gallery-item:nth-child(3) {
