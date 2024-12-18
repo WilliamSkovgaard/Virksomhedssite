@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Arrangementer</title>
     <link rel="stylesheet" href="https://use.typekit.net/lvo5gaz.css" />
-    <link rel="stylesheet" href="forside.css" />
     <link rel="stylesheet" href="booking.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header id="header">
@@ -23,26 +23,30 @@
       </nav>
     </header>
     <main>
+      <div>
+        <div class="video"><img src="img/billede_4.webp" alt="" /></div>
+      </div>
       <section>
-        <div class="video"></div>
-      </section>
-      <div class="search-container">
-        <h1>Arrangementer</h1>
-        <div class="search-bar">
-          <input class="searchtext" type="text" placeholder="SØG efter komiker ..." />
-          <div class="calendar-button">
-            <input class="searchtext" type="date" id="booking-date" />
+        <div class="search-container">
+          <div class="search-bar">
+            <input
+              class="searchtext"
+              type="text"
+              placeholder="SØG efter komiker ..."
+            />
+            <div class="calendar-button">
+              <input class="searchtext" type="date" id="booking-date" />
+            </div>
+          </div>
+          <div class="tags">
+            <div class="tag">Open Mic</div>
+            <div class="testshow" class="tag">Testshow</div>
+            <div class="klubaften" class="tag">Klub aften</div>
+            <div class="improsaften" class="tag">Improsaften</div>
+            <div class="livepodcast" class="tag">Live podcast</div>
           </div>
         </div>
-        <div class="tags">
-          <div class="tag">Open Mic</div>
-          <div class="testshow" class="tag">Testshow</div>
-          <div class="klubaften" class="tag">Klub aften</div>
-          <div class="improsaften" class="tag">Improsaften</div>
-          <div class="livepodcast" class="tag">Live podcast</div>
-        </div>
-      </div>
-
+      </section>
       <section class="section_1">
         <div class="grid_1-1-1">
           <div class="grid_poster">
@@ -161,5 +165,18 @@
         </ul>
       </div>
     </footer>
+    <script>
+      // Add an event listener to detect scroll
+      window.addEventListener("scroll", function () {
+        const header = document.getElementById("header");
+
+        // Add or remove class based on scroll position
+        if (window.scrollY > 500) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+    </script>
   </body>
 </html>

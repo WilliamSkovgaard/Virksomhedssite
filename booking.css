@@ -1,23 +1,58 @@
 /* BOOKINGSIDE */
-
+* {
+  color: white;
+}
+body {
+  background-color: black;
+}
+main {
+  display: flex;
+  flex-direction: column;
+}
+.video {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.video img {
+  object-fit: cover;
+  min-height: 100%;
+  max-width: 100%;
+  filter: blur(4px);
+}
+section,
+footer {
+  top: 50vh;
+  z-index: 2;
+  position: relative;
+}
+.search-container {
+  width: 100%;
+}
 .search-bar {
   display: flex;
   align-items: center;
   margin-bottom: 30px;
   margin: 10px;
   margin-top: 50px;
+  width: 100%;
 }
 .search-bar input {
   flex: 1;
   padding: 10px;
-  border: 1px solid #f0c864;
+  border: 5px solid;
+  border-color: #f0c864;
   outline: none;
-  font-size: 15px;
-  background-color: #fdf4e0;
   height: 30px;
+  background: white;
+  border-radius: 10px;
 }
 .search-bar input::placeholder {
-  color: #b3b3b3;
+  color: rgb(17, 17, 17);
 }
 .calendar-button {
   margin-left: 10px;
@@ -139,7 +174,110 @@
   justify-content: center;
   align-items: center;
 }
+.section_1 {
+  backdrop-filter: blur (10px);
+  margin-bottom: 10%;
+}
+.section_1 > div > div {
+  border-radius: 7% / 4.5%;
+  border: solid;
+  border-color: #ffda20;
+  border-width: 1px;
+  aspect-ratio: 9/14;
+  padding: 4%;
+  overflow: hidden;
+  position: relative;
+  gap: 3% 0;
+}
+.grid_poster {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr auto;
+}
+.section_1 > div > div > img {
+  width: 100%;
+  height: 100%;
+  grid-column: 1/5;
+  grid-row: 1/5;
+  object-fit: cover;
+  border-radius: 4% / 3%;
+}
+.section_1 > div > div > :nth-child(2) {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  border-radius: 7px;
+  background-color: #fff0d6;
+  aspect-ratio: 4/1;
+  margin: 10%;
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tags {
+  font-size: 0.5em;
+  color: black;
+  font-size: 1vw;
+  text-align: center;
+}
+.section_1 > div > div > :nth-child(3) {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  border-radius: 7px;
+  background-color: #fff0d6;
+  aspect-ratio: 4/1;
+  margin: 10%;
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section_1 > div > div > :nth-child(4) {
+  grid-column: 4/5;
+  grid-row: 1/2;
+  border-radius: 7px;
+  background-color: #8666f0;
+  aspect-ratio: 4/1;
+  margin: 10%;
+  padding: 3px;
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section_1 > div > div > :nth-child(5) {
+  grid-column: 1/5;
+  grid-row: 3/4;
+  margin: 0 0 0 4%;
+}
+.section_1 > div > div > :nth-child(6) {
+  grid-column: 1/5;
+  grid-row: 3/4;
+}
+.section_1 > div > div > :last-child {
+  grid-column: 1/5;
+  grid-row: 5/6;
+  background: linear-gradient(to right, #fffaf1, #fff0d5);
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  border-radius: 9px;
+  aspect-ratio: 7/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.17);
+}
 
+.section_1 > div > div > :last-child > a {
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+  color: #042d17;
+  font-variation-settings: "wght" 700;
+  font-size: 2vw;
+}
 .tag:hover {
   background-color: #efe7c9;
 }
