@@ -26,14 +26,27 @@
         <div id="video">
           <video autoplay muted loop class="comedyzoo-video">
             <source
-              src="http://benminja.dk/T05_passion/site-virk/test/video/comedyzoo-klip4.mp4"
+              src="https://benminja.dk/T05_passion/site-virk/test/video/comedyzoo-klip4.mp4"
               type="video/mp4"
             />
           </video>
         </div>
       </div>
+      <div class="div_ned">
+        <a href="#target"
+          ><img id="scrollButton" class="pil_ned" src="img/pil_ned.svg" alt=""
+        /></a>
+        <script>
+          // Scroll 500px down when the link is clicked
+          document
+            .getElementById("scrollButton")
+            .addEventListener("click", function (e) {
+              e.preventDefault(); // Prevent the default anchor behavior
+              window.scrollBy({ top: 800, behavior: "smooth" }); // Scroll down 500px
+            });
+        </script>
+      </div>
       <section class="section_1" id="main-content">
-        <h1>Arrangementer</h1>
         <div class="grid_1-1-1">
           <div class="grid_poster">
             <img src="img/Comedyposter1.webp" alt="" />
@@ -107,7 +120,7 @@
           </div>
         </div>
         <div class="knap_booking">
-          <a href="">SE PROGRAM </a>
+          <a href="booking.html">SE PROGRAM</a>
           <img src="img/Arrow_3.svg" alt="pil" />
         </div>
       </section>
@@ -162,7 +175,7 @@
         </div>
       </section>
     </main>
-    <footer id="main-content">
+    <footer>
       <div class="footer_div">
         <div>
           <img src="img/logo.svg" alt="logo" />
@@ -185,7 +198,7 @@
         </ul>
       </div>
       <div class="nederste_punkt">
-        <p>Copyright Cookies policy</p>
+        <p>Copyright @ Cookies policy</p>
       </div>
     </footer>
     <script>
