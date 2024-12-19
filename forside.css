@@ -67,26 +67,7 @@ section {
   margin: auto;
   padding: 0 50px;
 }
-nav {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 15px;
-}
-ul.header_nav {
-  display: flex;
-  justify-content: space-between;
-  margin: 8px 0 0 0;
-}
-ul.header_nav li a {
-  font-family: "cofo-gothic-variable", sans-serif;
-  font-variation-settings: "wght" 200;
-}
 
-.grid_1-1-1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 30px;
-}
 .section_1 {
   backdrop-filter: blur (10px);
 }
@@ -127,9 +108,8 @@ ul.header_nav li a {
   align-items: center;
 }
 .tags {
-  font-size: 0.5em;
+  font-size: 1em;
   color: black;
-  font-size: 1vw;
   text-align: center;
 }
 .section_1 > div > div > :nth-child(3) {
@@ -212,14 +192,12 @@ ul.header_nav li a {
 .section_2 {
   background-color: #fff1d6;
   height: 13%;
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
 }
-.section_2 .grid_1-1-1 div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+dotlottie-player {
+  width: 90px;
+  height: 90px;
+  align-self: center;
+  justify-self: center;
 }
 .section_2 .grid_1-1-1 div {
   display: flex;
@@ -249,6 +227,7 @@ ul.header_nav li a {
 .section_3 p {
   color: black;
   font-variation-settings: "wght" 200;
+  margin-bottom: 4%;
 }
 .section_3 > div > div {
   display: flex;
@@ -269,4 +248,44 @@ ul.header_nav li a {
   color: black;
   justify-self: baseline;
   font-size: 1.2em;
+}
+@media (min-width: 768px) {
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+  .section_2 {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .section_1 > div > div {
+    margin: 5% 0;
+  }
+  #main-content {
+    margin: 0;
+    padding: 5%;
+  }
+  .section_2 {
+    display: flex;
+    flex-direction: column;
+  }
+  dotlottie-player {
+    width: 90px;
+    height: 90px;
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 5%;
+  }
+  .section_2 > div > div {
+    margin-bottom: 5%;
+  }
+  .knap_laes_mere {
+    margin-bottom: 5%;
+  }
+  .section_1 > div > div > :last-child > a {
+    font-size: 6vw;
+  }
 }

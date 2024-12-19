@@ -15,23 +15,26 @@
         <a href="index.html">
           <img src="img/logo.svg" alt="logo" />
         </a>
-        <ul class="header_nav">
-          <li><a href="booking.html">ARRANGEMENTER</a></li>
-          <li><a href="">GAVEKORT</a></li>
-          <li><a href="">UDLEJNING</a></li>
-          <li><a href="info.html">INFO</a></li>
-        </ul>
+        <input type="checkbox" id="burger-toggle" />
+        <label for="burger-toggle" class="burger-menu"> ☰ </label>
+        <div class="header_nav">
+          <ul>
+            <li><a href="booking.html">ARRANGEMENTER</a></li>
+            <li><a href="">GAVEKORT</a></li>
+            <li><a href="">UDLEJNING</a></li>
+            <li><a href="info.html">INFO</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main>
       <div>
         <div class="video"><img src="img/billede_1.webp" alt="" /></div>
       </div>
-      <section></section>
-      <section>
+      <section class="section_1">
         <div class="grid_1-2">
-          <div>
-            <h2>Undergrunden - et intimt comedy show</h2>
+          <div class="tekst">
+            <h3>Undergrunden</h3>
             <p>
               At være nyskabende har altid været en del af vores dna. Derfor har
               vi netop slået dørene op for vores nyeste venue Undergrunden. Et
@@ -48,9 +51,21 @@
           </div>
         </div>
         <div class="grid_2-1">
-          <div><img class="bord" src="img/Odette.png" alt="" /></div>
-          <div>
-            <h2>Mad hos odette</h2>
+          <div class="tekst">
+            <h3>Caféen</h3>
+            <p>
+              Har Comedy Zoo et café? Ja, det har vi da - og du kan besøge den
+              mandag til lørdag 11-21. I vores hyggelige rammer i hjertet af
+              København kan du nyde en dejlig kaffe, drikke en øl eller spise en
+              panini. Vi sørger naturligvis for gratis wifi til din computer
+              hvis du vil sidde og arbejde, og er du studerende giver vi 20%.
+            </p>
+          </div>
+          <div><img class="bord" src="img/pic2.webp" alt="" /></div>
+        </div>
+        <div class="grid_1-2">
+          <div class="tekst">
+            <h3>Mad hos Odette</h3>
             <p>
               Skal du have stillet sulten inden show? Så har vi løsningen. Hver
               dag har vi 6 reserverede pladser hos vores nabo restaurant Odette,
@@ -64,10 +79,11 @@
               menuen + bordbestilling finder du her: odette.dk/comsedyzoo/
             </p>
           </div>
+          <div><img class="bord" src="img/Odette.png" alt="" /></div>
         </div>
-        <div class="grid_1-2">
-          <div>
-            <h2>Et SU venligt grin</h2>
+        <div class="grid_2-1">
+          <div class="tekst">
+            <h3>Et SU venligt grin</h3>
             <p>
               For at gøre stedet mere SU-venligt, kan man være heldig at kunne
               få fingrene i en studiebillet på udvalgte forestillinger, hvor du
@@ -86,26 +102,28 @@
         </div>
       </section>
 
-      <!-- GALLERI -->
-      <section class="grid_1_1">
-        <div class="gallery-container">
-          <div class="gallery-item tall">
-            <img src="img/pic2.webp" alt="Billede 1" />
-          </div>
-          <div class="gallery-item tall">
-            <img src="img/mikrofon.webp" alt="Billede 1" />
-          </div>
-          <div class="gallery-item wide">
-            <img src="img/pic3.webp" alt="Billede 2" />
-          </div>
-          <div class="gallery-item">
-            <img src="img/pic6.webp" alt="Billede 3" />
-          </div>
-          <div class="gallery-item">
-            <img src="img/pic4.webp" alt="Billede 4" />
-          </div>
-          <div class="gallery-item wide">
-            <img src="img/7.webp" alt="Billede 7" />
+      <section class="section_2">
+        <h1>Galleri</h1>
+        <div class="grid_1_1">
+          <div class="gallery-container">
+            <div class="gallery-item tall">
+              <img src="img/pic2.webp" alt="Billede 1" />
+            </div>
+            <div class="gallery-item tall">
+              <img src="img/mikrofon.webp" alt="Billede 1" />
+            </div>
+            <div class="gallery-item wide">
+              <img src="img/pic3.webp" alt="Billede 2" />
+            </div>
+            <div class="gallery-item">
+              <img src="img/pic6.webp" alt="Billede 3" />
+            </div>
+            <div class="gallery-item">
+              <img src="img/pic4.webp" alt="Billede 4" />
+            </div>
+            <div class="gallery-item wide">
+              <img src="img/7.webp" alt="Billede 7" />
+            </div>
           </div>
         </div>
       </section>

@@ -5,7 +5,6 @@
   text-decoration: none;
   list-style: none;
 }
-
 header {
   position: fixed;
   z-index: 1000;
@@ -21,27 +20,7 @@ header.scrolled {
 section {
   padding: 0 50px;
 }
-nav {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 15px;
-  width: 95%;
-}
-ul.header_nav {
-  display: flex;
-  justify-content: space-between;
-  margin: 8px 0 0 0;
-}
-ul.header_nav li a {
-  font-family: "cofo-gothic-variable", sans-serif;
-  font-variation-settings: "wght" 200;
-}
 
-.grid_1-1-1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 30px;
-}
 footer {
   background-color: #1f1f1f;
   font-size: 0.8em;
@@ -101,4 +80,84 @@ h4 {
 }
 p {
   line-height: 1.5;
+}
+ul.header_nav li a {
+  font-family: "cofo-gothic-variable", sans-serif;
+  font-variation-settings: "wght" 200;
+}
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 15px;
+  width: 95%;
+}
+@media (max-width: 768px) {
+  h4 {
+    font-variation-settings: "wght" 500;
+    font-size: 10vw;
+    color: #ffda20;
+  }
+  .underoverskrift {
+    font-size: 4vw;
+    font-variation-settings: "wght" 300;
+  }
+}
+@media (width > 768px) {
+}
+.header_nav ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0 0 0;
+}
+
+.burger-menu {
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+  color: white;
+  width: 100%;
+  text-align: right;
+}
+#burger-toggle {
+  display: none;
+}
+/* ************************************ */
+
+@media (width < 768px) {
+  .header_nav {
+    text-align: right; /* Hvis den ændres til right skal der justeres i padding for nav ul */
+    display: flex;
+    flex-direction: column;
+    height: calc(2em + 20px);
+    /* padding-left: 2em; */
+  }
+  /* vis burger icon i mobile view */
+  .burger-menu {
+    display: block;
+  }
+
+  /* skjul menuen */
+  .header_nav ul {
+    display: none;
+    position: absolute;
+    width: calc(100% - 38px); /* bredden er 100% minus højre/venstre padding */
+    margin: 0;
+  }
+
+  /* vis menu når checkbox er checked */
+  #burger-toggle:checked + label + .header_nav ul {
+    display: block;
+  }
+
+  nav ul a {
+    padding: 3px 0 4px 5px; /* Juster efter hvor høje menupunkterne skal være */
+    /* padding-left: calc(5px + 2em); */
+    /* margin-left: -2em; */
+    line-height: 2.5em;
+    width: 100%;
+    margin: auto;
+    display: inline-block;
+    text-align: right;
+    justify-self: center;
+  }
 }
