@@ -46,7 +46,7 @@ footer {
 }
 .section_2 {
   background-color: #fef8ed;
-  padding-top: 8%;
+  padding: 8% 2% 2% 2%;
 }
 
 .gallery-item {
@@ -58,16 +58,18 @@ footer {
   margin: 0;
 }
 .gallery-item img {
-  max-width: 100%;
+  width: 100%;
+  min-height: 100%;
   object-fit: cover;
   display: block;
-  margin: 1% 0;
+  margin: 1%;
 }
 
 @media (min-width: 768px) {
   .gallery-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 0 1%;
   }
   .tall {
     grid-row: span 2;
@@ -98,8 +100,8 @@ footer {
 }
 @media (max-width: 768px) {
   .section_2 {
-    padding-right: 0;
-    padding-left: 0;
+    padding-right: 2%;
+    padding-left: 2%;
   }
   .section_1 {
     margin-left: 0;
@@ -110,6 +112,9 @@ footer {
 
   img {
     margin: 0;
+  }
+  .gallery-item img {
+    margin: 1% 0;
   }
   .grid_2-1 {
     padding-bottom: 20%;
