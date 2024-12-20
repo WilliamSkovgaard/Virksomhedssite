@@ -37,7 +37,7 @@ main {
   object-fit: cover;
   filter: blur(0px);
 }
-#main-content,
+.main-content,
 footer {
   position: relative;
   z-index: 3;
@@ -68,9 +68,6 @@ section {
   padding: 0 50px;
 }
 
-.section_1 {
-  backdrop-filter: blur (10px);
-}
 .section_1 > div > div {
   border-radius: 7% / 4.5%;
   border: solid;

@@ -178,7 +178,6 @@ footer {
   gap: 30px;
 }
 .section_1 {
-  backdrop-filter: blur (10px);
   margin-bottom: 10%;
 }
 .section_1 > div > div {
